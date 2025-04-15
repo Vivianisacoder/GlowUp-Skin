@@ -209,7 +209,7 @@ h2 {
   transform: translateY(-5px);
 }
 
-.testimonials .reviews {
+.reviews {
   display: grid;
   gap: 2rem;
 }
@@ -218,23 +218,35 @@ h2 {
   background-color: var(--color-highlight);
   padding: 2rem;
   border-radius: 1rem;
-  font-style: italic;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all 0.3s ease;
 }
 
-.review h3 {
+.review-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-accent);
+  flex-shrink: 0;
+}
+
+.review-content h3 {
+  font-size: 1.05rem;
   font-weight: 600;
-  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  font-style: italic;
 }
 
-.review p {
+.review-content p {
   font-size: 0.9rem;
   color: var(--color-muted);
-  margin-top: 1rem;
 }
 
 .limited-offer {
-  background-color: var(--color-accent);
+  background-color: #7f7f7f;
   color: white;
   text-align: center;
   padding: 4rem 2rem;

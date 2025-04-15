@@ -12,4 +12,8 @@
   .testimonials .reviews {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .reviews {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
