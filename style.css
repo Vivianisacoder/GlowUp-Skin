@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f0eb;
+  color: #2c2c2c;
+}
+
+/* Navbar Styling */
+#navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #7f7f7f;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+/* Hidden state */
+#navbar.hide {
+  transform: translateY(-100%);
+}
+
+/* Optional: nav link styling */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav a:hover {
+  color: #7f7f7f;
+}
+
+.cta-button {
+  background: #b89d89;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
