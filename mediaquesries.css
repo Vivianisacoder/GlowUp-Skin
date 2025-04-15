@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .benefit-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .how-it-works .steps {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .testimonials .reviews {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
