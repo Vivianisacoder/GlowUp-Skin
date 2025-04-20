@@ -3,26 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GlowUp Skin - Product LauncH Landing Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>GlowUp Serum | Your glow, bottled.</title>
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaquesries.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
   <body>
-    <!-- Header Section -->
-    <header id="navbar">
-      <nav class="nav">
-        <a href="#hero">Home</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#offer">Offer</a>
-        <a href="#faq">FAQ</a>
-        <a href="#signup" class="cta-button">Sign Up</a>
-      </nav>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">GlowUp</a>
+        </nav>
+        <div class="nav-links">
+          <a href="#benefits">Benefits</a>
+          <a href="#howto">How to</a>
+          <a href="testimonials">Reviews</a>
+          <a href="offer">Offer</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
     </header>
 
     <section class="hero" id="hero">
@@ -34,136 +38,187 @@
       <div class="hero-image">
         <img
           src="assets/ChatGPT Image Apr 15, 2025, 06_43_56 PM.png"
+          width="100px"
+          height="100%"
           alt="GlowUp Serum Bottle"
         />
       </div>
     </section>
 
-    <section class="benefits" id="benefits">
-      <h2>Why You’ll Love It</h2>
-      <div class="benefit-cards">
-        <div class="card">
-          <h3>Hydrating AF</h3>
-          <p class="card-desc">
-            Deep moisture that lasts all day—without feeling greasy.
-          </p>
-        </div>
-        <div class="card">
-          <h3>100% Vegan & Cruelty-Free</h3>
-          <p class="card-desc">Powered by plants. Never tested on animals.</p>
-        </div>
-        <div class="card">
-          <h3>Dermatologist Approved</h3>
-          <p class="card-desc">Clinically tested for sensitive skin.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="how-it-works" id="how-it-works">
-      <h2>How It Works</h2>
-      <div class="steps">
-        <div class="step">
-          <h3>Step 1</h3>
-          <p>Cleanse – Start with a fresh face</p>
-        </div>
-        <div class="step">
-          <h3>Step 2</h3>
-          <p>Apply GlowUp – Just 2–3 drops go a long way</p>
-        </div>
-        <div class="step">
-          <h3>Step 3</h3>
-          <p>Glow All Day – Radiant skin in under 7 days</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <h2>What Our Glow Getters Say</h2>
-      <div class="reviews">
-        <div class="review">
-          <img src="assets/download.jfif" alt="Lena K." class="review-img" />
-          <div class="review-content">
-            <h3>“My skin has never felt softer. Total game-changer.”</h3>
-            <p>Lena K., 28</p>
+    <section id="Benefits">
+      <div class="container">
+        <h2 class="section-title">Why Choose GlowUp Serum?</h2>
+        <div class="benefits-grid">
+          <div class="benefit">
+            <h3>Hydrating AF</h3>
+            <p>Deep moisture that lasts all day—without feeling greasy.</p>
           </div>
-        </div>
-
-        <div class="review">
-          <img src="assets/OIP (1).jfif" alt="Tasha M." class="review-img" />
-          <div class="review-content">
-            <h3>“It’s like confidence in a bottle. I’m obsessed.”</h3>
-            <p>Tasha M., 34</p>
+          <div class="benefit">
+            <div class="benefit-icon">🌱</div>
+            <h3>100% Vegan & Cruelty-Free</h3>
+            <p>Powered by plants. Never tested on animals.</p>
           </div>
-        </div>
-
-        <div class="review">
-          <img src="assets/OIP (2).jfif" alt="Iris D." class="review-img" />
-          <div class="review-content">
-            <h3>
-              “Finally, a serum that does what it says. Love the minimal vibe
-              too.”
-            </h3>
-            <p>Iris D., 23</p>
+          <div class="benefit">
+            <div class="benefit-icon">✓</div>
+            <h3>Dermatologist Approved</h3>
+            <p>Clinically tested for sensitive skin.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="offer" class="limited-offer">
-      <h2>Limited Launch Offer – <span>30% Off</span></h2>
-      <p class="subtext">Only for the first 200 orders. Don’t miss the glow.</p>
-
-      <div class="countdown" id="countdown">
-        Offer ends in: <span id="timer">03:21:08</span>
-      </div>
-
-      <a href="#signup" class="btn-glow">Claim Your Glow</a>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-      <h2>You Asked, We Answered</h2>
-
-      <div class="faq-item">
-        <button class="faq-question">Is it safe for sensitive skin?</button>
-        <div class="faq-answer">
-          <p>
-            Yes! It’s dermatologist tested and formulated for all skin types.
-          </p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">How long does shipping take?</button>
-        <div class="faq-answer">
-          <p>3–5 business days within the US.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">Can I use it with other products?</button>
-        <div class="faq-answer">
-          <p>Totally. It layers well with moisturizers and SPF.</p>
+    <section id="howto">
+      <div class="container">
+        <h2 class="section-title">How it works</h2>
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Cleanse</h3>
+            <p>Start with a fresh Face</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Apply Glowup</h3>
+            <p>Just 2-3 drops go a long way</p>
+          </div>
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Glow all day</h3>
+            <p>Radiant Skin in under 7 days</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Email Signup Section -->
-    <section id="signup" class="email-signup">
-      <h2>Get On the Glow List</h2>
-      <p class="subtext">
-        Be the first to know about restocks, exclusive drops, and skincare tips.
-      </p>
-
-      <form id="signup-form">
-        <input type="email" id="email" placeholder="Your Email" required />
-        <button type="submit">Sign Me Up</button>
-      </form>
-
-      <p id="success-message" class="success-msg">
-        You’re on the list! We’ll be in touch soon.
-      </p>
+    <section id="testimonials">
+      <div class="container">
+        <h2 class="section-title">What Our Glow Getters Say</h2>
+        <div class="testimonials-container">
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "My skin has never felt softer. Total game-changer."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="assets/OIP (1).jfif" alt="Lena" />
+              </div>
+              <div class="author-info">
+                <h4>Lena K.</h4>
+                <p>28</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "It's like confidence in a bottle. I'm obsessed."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="assets/OIP (2).jfif" alt="Tasha" />
+              </div>
+              <div class="author-info">
+                <h4>Tasha M.</h4>
+                <p>34</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "Finally, a serum that does what it says. Love the minimal vibe
+              too."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-image">
+                <img src="assets/OIP.jfif" alt="David" />
+              </div>
+              <div class="author-info">
+                <h4>David P.</h4>
+                <p>23</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <script src="script.js"></script>
+
+    <section id="offers">
+      <div class="container">
+        <div class="offer-section">
+          <h2>Limited Launch - 30% off</h2>
+          <p>Only for the first 200 orders. Don't miss the Glow!</p>
+          <div class="countdown-item">
+            <span class="countdown-number" id="hours">03</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="minutes">21</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="seconds">08</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+        <a href="#" class="btn"> Clain Your Glow</a>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2 class="section-title">You Asked, We Answered!</h2>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">Is it safe for sensitive skin?</div>
+            <div class="faq-answer">
+              Yes! It's dermatologist tested and formulated for all skin types.
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">How long does shipping take?</div>
+            <div class="faq-answer">3 – 5 business days within the US.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">Can I use it with other products?</div>
+            <div class="faq-answer">
+              Totally. It layers well with moisturizers and SPF.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup-section">
+      <div class="container">
+        <h2>Get on the glow</h2>
+        <p>
+          Be the first to know about Restocks, Skincare tips and Exclusive Drops
+        </p>
+        <form id="email-form" class="email-form" action="#" method="POST">
+          <input
+            type="email"
+            class="email-input"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="submit-btn">Sign Me Up</button>
+        </form>
+        <p id="success-message" class="success-message">
+          You are the first on the list, we will be in touch!
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-logo">GlowUp</div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of service</a>
+          <a href="#">Contact us</a>
+          <a href="#">Instagram</a>
+        </div>
+        <p class="copyright">© 2025 GlowUp Skin. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
